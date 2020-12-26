@@ -1,0 +1,41 @@
+create database
+
+
+CREATE TABLE `quiz` (
+  `id` int(255) NOT NULL,
+  `que` text NOT NULL,
+  `option 1` varchar(222) NOT NULL,
+  `option 2` varchar(222) NOT NULL,
+  `option 3` varchar(222) NOT NULL,
+  `option 4` varchar(222) NOT NULL,
+  `ans` varchar(222) NOT NULL,
+  `userans` text
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+INSERT INTO `quiz` (`id`, `que`, `option 1`, `option 2`, `option 3`, `option 4`, `ans`, `userans`) VALUES
+(1, ' What is the built in library function to adjust the allocated dynamic memory size', 'malloc', 'calloc', 'realloc', 'resize', 'realloc', 'realloc'),
+(2, 'What is the built in library function to compare two strings? ', 'string_compare()', 'strcmp()', 'equals()', 'str_compare()', 'strcmp()', 'strcmp()'),
+(5, 'Which of the following is not a valid variable name declaration?','int __a3;','int __3a',' int __A3','None of the mentioned','None of the mentioned','None of the mentioned'),
+(4, ' During preprocessing, the code “#include<stdio.h>” gets replaced by the contents of the file stdio.h.', 'Yes', ' During linking the code “#include<stdio.h>” replaces by stdio.h', ' During execution the code “#include<stdio.h>” replaces by stdio.h', ' During editing the code “#include<stdio.h>” replaces by stdio.h', 'Yes', 'Yes'),
+(3, 'In Windows & Linux, how many bytes exist for near, far and huge pointers?', 'Near: 1, far: 4, huge: 7', 'near: 4, far: 4, huge: 4', ' near: 0, far: 4, huge: 4', 'near: 4, far: 5, huge: 6', 'near: 4, far: 4, huge: 4', 'tnear: 4, far: 4, huge: 4');
+
+CREATE TABLE `quiz1` (
+  `id` int(255) NOT NULL,
+  `que` text NOT NULL,
+  `option 1` varchar(222) NOT NULL,
+  `option 2` varchar(222) NOT NULL,
+  `option 3` varchar(222) NOT NULL,
+  `option 4` varchar(222) NOT NULL,
+  `ans` varchar(222) NOT NULL,
+  `userans` text
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+INSERT INTO `quiz1` (`id`, `que`, `option 1`, `option 2`, `option 3`, `option 4`, `ans`, `userans`) VALUES
+(1, 'Today it is Thursday.After 132 days,it will be', 'Monday', 'Sunday', 'Wednesday', 'Thursday', 'Wednesday', 'Wednesday'),
+(2, 'Devesh can cover a certain distance in 1 hour 24 minutes by covering two-third of the distance at 6 km/hour and the rest at 7 km/hr. Calculate total distance.', '8km','9km','6km','7/5km','6km','6km'),
+(3, 'Find the H.C.F, if the numbers are in the ratio of 4 : 5 : 6 and their L.C.M. is 2400.','35','20','40','67','20','20'),
+(4, ' What is the value of c , If 8 is 4% of a, and 4 is 8% of b. c equals b/a.','12','1/4','0.155','None Of these','1/4','1/4'),
+(5, 'The rate at which a sum becomes four times of itself in 25 years at S.I.,will be:','30%','25%','12%','49%','12%','12%');
